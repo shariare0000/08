@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+#myDiv1, #myDiv2 {
+  background-color: coral;
+  padding: 50px;
+}
+
+#myP1, #myP2 {
+  background-color: white; 
+  font-size: 20px;
+  border: 1px solid;
+  padding: 20px;
+}
+#myDIV {
+  background-color: coral;
+  border: 1px solid;
+  padding: 50px;
+  color: white;
+  font-size: 20px;
+}
+</style>
+    
+</head>
+<body>
+   
+    <div id="dl"></div>
+    <h1></h1>
+    <p class="c1"></p>
+    <p class="c2"></p>
+    <h3 id="demo"></h3>
+    <p class="c3"></p>
+
+   <ul id="menu">
+    <li>Home</li>
+   </ul>
+
+   <div id="wb5"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, dolore?</p></div>
+
+   <h1 id="change">Hello Bangladesh</h1>
+   <button onclick="changeText()">Click me to change content</button>
+   
+   <img id="img1" src="cat.jpg" width="200" alt="">
+   <img id="img2" src="tiger.jpg" width="200" alt="">
+   <img id="img3" src="dog.jpg" width="200" alt="">
+   <br>
+
+   <button onclick="changeFirstImage()">click to change image</button>
+   <button onclick="changeSecondImage()">click to change image</button>
+  <button onclick="changeThirdImage()">click to change image</button>
+
+
+Enter your fastname: <input type="text" id="fname" oninput="upperCase()">
+Enter your lastname: <input type="text" id="lname" oninput="lowerCase()">
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;"
+ onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">🙂
+</div>
+
+
+Enter your name: <input type="text" onfocus="myFunction(this)">
+
+
+<button id="myBtn">Try it</button>
+<h1 id="demo1"></h1>
+
+<div id="myDiv1">
+  <h2>Bubbling:</h2>
+  <p id="myP1">Click me!</p>
+</div><br>
+
+<div id="myDiv2">
+  <h2>Capturing:</h2>
+  <p id="myP2">Click me!</p>
+</div>
+
+<div id="myDIV">
+  <p>This div element has an onmousemove event handler that displays a random number every time you move your mouse inside this orange field.</p>
+  <p>Click the button to remove the div's event handler.</p>
+  <button onclick="removeHandler()" id="myBtn">Remove</button>
+</div>
+
+<p id="demo"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
